@@ -1,0 +1,95 @@
+\documentclass[10pt,a4paper,ragged2e]{altacv}
+\geometry{left=2cm,right=10cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1.25cm,bottom=1.25cm}
+\ifxetexorluatex
+  \setmainfont{Carlito}
+\else
+  \usepackage[utf8]{inputenc}
+  \usepackage[T1]{fontenc}
+  \usepackage[default]{lato}
+  \usepackage{hyperref}
+  \usepackage{longfbox}
+\fi
+\definecolor{VividPurple}{HTML}{000000}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{2E2E2E}
+\colorlet{heading}{VividPurple}
+\colorlet{accent}{VividPurple}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+\addbibresource{sample.bib}
+
+\begin{document}
+\name{Dylan Cancelliere}
+\tagline{Rochester Institute of Technology}
+\personalinfo{
+  \href{mailto:dycancel@gmail.com}{\faEnvelopeO \space dycancel@gmail.com} \quad \quad
+  \phone{203-214-5684}
+  \href{https://www.linkedin.com/in/dylan-cancelliere/}{\linkedin{linkedin.com/in/dylan-cancelliere}}
+  \href{https://github.com/dylan-cancelliere}{\faicon{github}{ github.com/dylan-cancelliere}}
+}
+
+\begin{fullwidth}
+\makecvheader
+\end{fullwidth}
+
+\AtBeginEnvironment{itemize}{\small}
+
+\cvsection[page1sidebar]{Work Experience}
+
+\cvevent{\href{https://www.hubspot.com/}{HubSpot} | \emph{Fullstack Software Engineer Intern}}{}{Jan 2021 -- Aug 2021}{Remote}
+\begin{itemize}
+\item Redesigned cookie banner settings page and implemented auto-saving feature.
+\smallskip
+\item Created UX to display cookie scan reports and built a report generator to summarise new scans and email results.
+\smallskip
+\item Implemented Kafka-like message queuing system to flatten load on heavily used endpoints.
+\end{itemize}
+
+\divider
+
+\cvevent{\href{https://www.constantcontact.com/}{Constant Contact} | \emph{Software Engineer Intern}}{}{Jun 2020 - Aug 2020}{Remote}
+\begin{itemize}
+\item Built a standard feature gating process for beta features and internal adopters.
+\smallskip
+\item Helped identify and resolve bugs ahead of release of mobile app to over 600,000 customers.
+\smallskip
+\item Engineered various frontend changes on the flagship cross platform email editor.
+\end{itemize}
+
+\cvsection[]{Projects}
+
+\cvevent{AutoRecipe | \emph{React, Redux, NodeJS}}{\underline{\href{https://github.com/dylan-cancelliere/auto-recipe}{\faicon{github} https://github.com/dylan-cancelliere/auto-recipe}}}{}{}
+\begin{itemize}
+\item App to suggest recipes based on what's already in your house.
+\smallbreak
+\item Built a web scraper to build a database of ingredients and recipes from \href{https://tasty.co/}{\underline{tasty.co}}.
+\smallskip
+\item Stores user session and ingredients that a user has added to their virtual pantry.
+\end{itemize}
+
+\divider
+
+\cvevent{AutoDJ | \emph{React, NodeJS}}{\underline{\href{https://github.com/dylan-cancelliere/auto-dj}{\faicon{github} https://github.com/dylan-cancelliere/auto-dj}}}{}{}
+\begin{itemize}
+    \item Crowdsources music selection by adding tracks to a queue and having users vote on which songs they want to hear.
+    \smallskip
+    \item Uses \underline{\href{https://developer.spotify.com/documentation/web-api/}{Spotify Web API}} for music selection and playback.
+    \smallbreak
+    \item Conforms to OAuth2 flow for user authentication.
+\end{itemize}
+
+\divider
+
+\cvevent{Morning Announcements App | \emph{Java}}{\underline{\href{https://github.com/dylan-cancelliere/announcements}{\faicon{github} https://github.com/dylan-cancelliere/announcements}}}{}{}
+\begin{itemize}
+    \item App to keep track of announcements and upcoming events from my high school.
+    \smallskip
+    \item Pulls data from simple Google Sheets "database" from the \underline{\href{https://developers.google.com/sheets/api}{Sheets API}}.
+    \smallskip
+    \item Self taught Android Studio and app design principles alongside learning Java in class.
+\end{itemize}
+
+\clearpage
+\end{document}
